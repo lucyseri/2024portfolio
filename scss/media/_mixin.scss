@@ -1,0 +1,11 @@
+@import '../media/variable';
+@mixin mobile {
+  @media only screen and (max-width: #{$break-mobile}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media only screen and (max-width: #{$break-tablet}) {
+    @content;
+  }
+}
