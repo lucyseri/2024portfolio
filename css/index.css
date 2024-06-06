@@ -501,8 +501,8 @@ body {
 #footer .inner-footer h2 {
   font-size: 3rem;
   font-family: "Roboto Condensed", sans-serif;
-  color: #f9f9f9;
   text-align: center;
+  color: #f9f9f9;
 }
 #footer .inner-footer .email {
   display: flex;
