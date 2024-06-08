@@ -23,6 +23,10 @@ body {
   font-family: "Noto Sans KR", sans-serif;
 }
 
+h1, h2, h3 {
+  color: #020715;
+}
+
 #wrap {
   background-color: #f9f9f9;
 }
@@ -34,7 +38,7 @@ body {
   padding: 140px 0;
 }
 #wrap #header .inner-header {
-  flex: 0 1 1512px;
+  flex: 0 1 1400px;
 }
 #wrap #main section {
   width: 100%;
@@ -44,7 +48,7 @@ body {
   padding: 100px 0;
 }
 #wrap #main section .inner-sec {
-  flex: 0 1 1512px;
+  flex: 0 1 1400px;
 }
 #wrap #footer {
   width: 100%;
@@ -55,7 +59,7 @@ body {
   background-color: #252525;
 }
 #wrap #footer .inner-footer {
-  flex: 0 1 1512px;
+  flex: 0 1 1400px;
 }
 
 @keyframes titleIn {
@@ -137,7 +141,6 @@ body {
   border-bottom: 1px solid #818181;
   font-size: 3.4rem;
   font-family: "Roboto Condensed", sans-serif;
-  color: #020715;
 }
 #sec1 .inner-sec .sec-con {
   display: flex;
@@ -147,12 +150,11 @@ body {
   padding: 1.5rem 0;
 }
 #sec1 .inner-sec .sec-con .con-item {
-  flex: 0 1 706px;
+  flex: 0 1 700px;
 }
 #sec1 .inner-sec .sec-con .con-item h3 {
   font-size: 1.9rem;
   font-family: "Roboto Condensed", sans-serif;
-  color: #020715;
 }
 #sec1 .inner-sec .sec-con .item1 ul {
   padding: 1rem 0 0;

@@ -11,7 +11,7 @@
     justify-content: center;
     padding: 140px 0;
     .inner-header{
-      flex: 0 1 1512px;
+      flex: 0 1 1400px;
     }
   }
   #main{
@@ -22,7 +22,7 @@
       justify-content: center;
       padding: 100px 0;
       .inner-sec{
-        flex: 0 1 1512px;
+        flex: 0 1 1400px;
       }
     }
   }
@@ -34,7 +34,7 @@
     padding: 160px 0;
     background-color: $darkgrey-color;
     .inner-footer{
-      flex: 0 1 1512px;
+      flex: 0 1 1400px;
     }
   }
 }
@@ -120,7 +120,6 @@
       border-bottom: 1px solid $lightgrey-color;
       font-size: 3.4rem;
       font-family: $point-font;
-      color: #020715;
     }
     .sec-con{
       display: flex;
@@ -129,11 +128,10 @@
       gap: 3rem 0;
       padding: 1.5rem 0;
       .con-item{
-        flex: 0 1 706px;
+        flex: 0 1 700px;
         h3{
           font-size: 1.9rem;
           font-family: $point-font;
-          color: #020715;
         }
       }
       .item1{
