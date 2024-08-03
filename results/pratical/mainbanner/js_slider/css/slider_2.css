@@ -1,0 +1,93 @@
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li, ul{
+  list-style: none;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+/* layout */
+#wrap{
+  width: 100%;
+  padding: 40px 0;
+}
+#wrap section{
+  width: 780px;
+  margin: 0 auto;
+}
+#wrap section::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+#wrap section .container{
+  width: 620px;
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  margin-right: 40px;
+}
+
+/* gallery */
+#wrap section .container .gallery{
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+#wrap section .container .gallery .slide{
+  width: 100%;
+}
+#wrap section .container .gallery .slide img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*controllers*/
+#wrap section .controller{
+  width: 80px;
+  height: inherit;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#wrap section .controller span{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid;
+  border-left: 3px solid;
+  cursor: pointer;
+}
+#wrap section .controller span.prev{
+  transform: rotate(45deg);
+}
+#wrap section .controller span.next{
+  transform: rotate(-135deg);
+}
+#wrap section .controller .pager{
+  width: 100%;
+}
+#wrap section .controller .pager li{
+  width: 16px;
+  height: 16px;
+  margin: 24px auto;
+  background-color: #555;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#wrap section .controller .pager li.active{
+  transform: scale(1.4);
+}
