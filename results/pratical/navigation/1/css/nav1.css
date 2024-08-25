@@ -1,0 +1,217 @@
+@charset "utf-8";
+@import url("../../../../../css/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+  font-family: "Roboto", sans-serif;
+}
+:root{
+  --dark-color: #181818;
+  --lessdark-color: #525252;
+  --light-color: #ebebeb;
+  --background-color: #f8f8f8;
+}
+body.dark{
+  --dark-color: #fdfdfd;
+  --lessdark-color: #999999;
+  --light-color: #272727;
+  --background-color: #131313;
+}
+/* re-use */
+header .list-box{
+  min-width: 48px;
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  gap: 12px;
+  overflow: hidden;
+}
+header .list-box .icon{
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--dark-color);
+}
+header .list-box .txt{
+  line-height: 40px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+header{
+  width: 300px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+header .top-gnb .btn-box{
+  display: flex;
+  justify-content: right;
+}
+header .top-gnb .btn-box .close-btn{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+  color: var(--dark-color);
+  background-color: var(--background-color);
+  cursor: pointer;
+}
+header .top-gnb .btn-box .close-btn:hover{
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+header .top-gnb .logo-con{
+  width: 100%;
+  height: 48px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0 28px;
+  overflow: hidden;
+}
+header .top-gnb .logo-con h1{
+  min-width: 48px;
+  width: 48px;
+  height: inherit;
+  background-color: var(--dark-color);
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 48px;
+  color: var(--light-color);
+}
+header .top-gnb .logo-con p{
+  width: calc(100% - 60px);
+  height: inherit;
+  font-size: 14px;
+  color: var(--dark-color);
+  white-space: nowarp;
+}
+header .top-gnb .search-box{
+  margin-bottom: 24px;
+  background-color: var(--light-color);
+}
+header .top-gnb .search-box .icon{
+  cursor: pointer;
+}
+header .top-gnb .search-box input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+header .top-gnb .search-box input::placeholder{
+  color: var(--lessdark-color);
+}
+header .top-gnb .gnb li{
+  margin-bottom: 12px;
+}
+header .top-gnb .gnb li:hover{
+  background-color: var(--light-color);
+}
+header .top-gnb .gnb li a .txt{
+  color: var(--dark-color);
+}
+header .bottom-btn .logout{
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+header .bottom-btn .logout .txt{
+  color: var(--dark-color);
+}
+header .bottom-btn .logout:hover{
+  background-color: var(--light-color);
+}
+header .bottom-btn .mode{
+  width: 100%;
+  height: 48px;
+  background-color: var(--light-color);
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .bottom-btn .mode .mode-label{
+  display: flex;
+  gap: 12px;
+}
+header .bottom-btn .mode .mode-label .icons{
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+body header .bottom-btn .mode .mode-label .icons .icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--light-color);
+}
+header .bottom-btn .mode .mode-label .txt{
+  color: var(--dark-color);
+}
+header .bottom-btn .mode .mode-btn{
+  width: 38px;
+  height: 24px;
+  position: absolute;
+  right: 10px;
+}
+header .bottom-btn .mode .mode-btn .switch-box{
+  width: 100%;
+  height: inherit;
+  border-radius: 30px;
+  background-color: var(--dark-color);
+  position: relative;
+}
+body header .bottom-btn .mode .mode-btn .switch-box .switch{
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--light-color);
+  border: 4px solid var(--dark-color );
+  position: absolute;
+  top: 0;
+  right: calc(100% - 24px);
+  transition: right 0.3s ease;
+  cursor: pointer;
+}
+/* close */
+header.close{
+  width: 88px;
+}
+header.close .top-gnb .btn-box{
+  justify-content: center;
+}
+header.close .top-gnb .btn-box .close-btn{
+  transform: scale(-1);
+}
+header.close .top-gnb .logo-con p{
+  opacity: 0;
+}
+header.close .list-box .txt{
+  opacity: 0;
+}
+header.close .bottom-btn .mode .mode-label{
+  display: flex;
+  gap: 12px;
+  opacity: 0;
+}
+header.close .bottom-btn .mode .mode-btn{
+  right: 5px;
+}
+body.dark header .bottom-btn .mode .mode-btn .switch-box .switch{
+  right: 0;
+}
