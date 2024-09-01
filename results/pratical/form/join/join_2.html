@@ -40,22 +40,22 @@
             <form action="#" method="post">
               <div class="input-box">
                 <label for="user-name">Full Name</label>
-                <input type="text" id="user-name" placeholder="Enter your Full Name">
+                <input type="text" id="user-name" placeholder="Enter your Full Name" required>
               </div>
               <div class="input-box">
                 <label for="user-profile" class="file-label">
                   <span class="profile-img"></span>
                   <span class="profile-txt">Add Photo</span>
                 </label>
-                <input type="file" id="user-profile">
+                <input type="file" id="user-profile" required>
               </div>
-              <div class="input-box width-100">
-                <label for="user-phone">Phone Number</label>
-                <input type="text" id="user-phone" placeholder="Enter your Phone Number">
+              <div class="input-box width-100 phone">
+                <label for="user-phone">Phone Number<span class="warning">(Only Numbers)</span></label>
+                <input type="text" id="user-phone" placeholder="Enter your Phone Number without Dash" maxlength="11" required oninput="this.value = this.value.replace(/[^0-9.]/g,'').replace(/(\..*)\./g, '$1');" />
               </div>
               <div class="input-box select-box">
                 <label for="user-occupation">Occupation</label>
-                <select name="user-occupation" id="user-occupation">
+                <select name="user-occupation" id="user-occupation" required>
                   <option value="-select-">-select-</option>
                   <option value="student">Student</option>
                   <option value="designer">Designer</option>
@@ -68,7 +68,7 @@
               </div>
               <div class="input-box select-box">
                 <label for="user-region">Region</label>
-                <select name="user-region" id="user-region">
+                <select name="user-region" id="user-region" required>
                   <option value="-select-">-select-</option>
                   <option value="asia">Asia</option>
                   <option value="america">America</option>
@@ -78,21 +78,21 @@
               <fieldset class="input-box">
                 <legend class="laebl">Gender</legend>
                 <div class="input-inner">
-                  <input type="radio" id="user-male" name="user-gender">
+                  <input type="radio" id="user-male" name="user-gender" required>
                   <label for="user-male" class="gender-label">Male</label>
                 </div>
                 <div class="input-inner">
-                  <input type="radio" id="user-female" name="user-gender">
+                  <input type="radio" id="user-female" name="user-gender" required>
                   <label for="user-female" class="gender-label">Female</label>
                 </div>
                 <div class="input-inner">
-                  <input type="radio" id="user-not" name="user-gender">
+                  <input type="radio" id="user-not" name="user-gender" required checked>
                   <label for="user-not" class="gender-label">Not Check</label>
                 </div>
               </fieldset>
               <div class="input-box width-100">
                 <label for="bio-description">Description for your Bio</label>
-                <textarea name="bio-description" id="bio-description" placeholder="Within 200 Characters" maxlength="200"></textarea>
+                <textarea name="bio-description" id="bio-description" placeholder="Within 200 Characters" maxlength="200" required></textarea>
               </div>
               <button>Continue</button>
             </form>
