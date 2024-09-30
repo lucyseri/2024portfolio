@@ -78,29 +78,43 @@ header .top-gnb .logo-con{
   width: 100%;
   height: 48px;
   overflow: hidden;
+  margin: 20px 0 28px;
+}
+header .top-gnb .logo-con a{
+  width: 100%;
+  height: inherit;
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 20px 0 28px;
-  overflow: hidden;
 }
-header .top-gnb .logo-con h1{
+body header .top-gnb .logo-con a h1{
   min-width: 48px;
   width: 48px;
   height: inherit;
-  background-color: var(--dark-color);
   border-radius: 4px;
   font-size: 14px;
   text-align: center;
   line-height: 48px;
-  color: var(--light-color);
+  overflow: hidden;
+  background: url("../img/logo_light.svg") no-repeat center / 100%;
 }
-header .top-gnb .logo-con p{
+body.dark header .top-gnb .logo-con a h1{
+  background: url("../img/logo_dark.svg") no-repeat center / 100%;
+}
+header .top-gnb .logo-con a p{
   width: calc(100% - 60px);
   height: inherit;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--dark-color);
   white-space: nowarp;
+  display: block;
+  padding: 4px 0 0 0;
+  font-weight: 700;
+}
+header .top-gnb .logo-con a p span{
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
 }
 header .top-gnb .search-box{
   margin-bottom: 24px;
@@ -122,6 +136,9 @@ header .top-gnb .gnb li{
 }
 header .top-gnb .gnb li:hover{
   background-color: var(--light-color);
+}
+header .top-gnb .gnb li a{
+  width: 100%;
 }
 header .top-gnb .gnb li a .txt{
   color: var(--dark-color);
