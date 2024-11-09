@@ -185,40 +185,30 @@ section .inner {
 /*new section*/
 #sec2 .product-slider {
   width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
   overflow: hidden;
 }
-#sec2 .product-slider .slider-inner{
+#sec2 .product-slider .new-con {
   width: calc(300% + (2 * 32px));
-  height: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.3s ease-in-out;
-}
-#sec2 .product-slider .slider-inner .new-con {
-  width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 32px;
+  transition: all 0.3s ease-in-out;
 }
-#sec2 .product-slider .slider-inner .new-con .new-item a {
+#sec2 .product-slider .new-con .new-item a {
   display: block;
   width: 100%;
   height: auto;
 }
-#sec2 .product-slider .slider-inner .new-con .new-item a img {
+#sec2 .product-slider .new-con .new-item a img {
   display: block;
   width: 100%;
   height: auto;
 }
-#sec2 .product-slider .slider-inner .new-con .new-item a .product-info {
+#sec2 .product-slider .new-con .new-item a .product-info {
   padding: 0 4px;
 }
-#sec2 .product-slider .slider-inner .new-con .new-item a .product-info .name {
+#sec2 .product-slider .new-con .new-item a .product-info .name {
   height: 56px;
   font-size: 14px;
   font-weight: 500;
@@ -230,18 +220,18 @@ section .inner {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
-#sec2 .product-slider .slider-inner .new-con .new-item a .product-info .price-info {
+#sec2 .product-slider .new-con .new-item a .product-info .price-info {
   display: grid;
   justify-content: space-between;
   grid-template-columns: auto auto;
 }
-#sec2 .product-slider .slider-inner .new-con .new-item a .product-info .price-info .price {
+#sec2 .product-slider .new-con .new-item a .product-info .price-info .price {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   color: var(--txt1-color);
 }
-#sec2 .product-slider .slider-inner .new-con .new-item a .product-info .price-info .heart-icon {
+#sec2 .product-slider .new-con .new-item a .product-info .price-info .heart-icon {
   display: block;
   width: 20px;
   height: 20px;
@@ -491,16 +481,11 @@ section .inner {
     height: 18px;
   }
   /*new section*/
-  #sec2 .product-slider .slider-inner{
+  #sec2 .product-slider .new-con {
     width: calc(400% + (3 * 16px));
-  }
-  #sec2 .product-slider .slider-inner .new-con {
     gap: 16px;
   }
-  #sec2 .product-slider .slider-inner .new-con .new-item a .product-info {
-    padding: 0 4px;
-  }
-  #sec2 .product-slider .slider-inner .new-con .new-item a .product-info .price-info .heart-icon {
+  #sec2 .product-slider .new-con .new-item a .product-info .price-info .heart-icon {
     width: 18px;
     height: 18px;
   }
@@ -590,10 +575,8 @@ section .inner {
     grid-template-columns: repeat(2, 1fr);
   }
   /*section2 - new con*/
-  #sec2 .product-slider .slider-inner{
+  #sec2 .product-slider .new-con {
     width: calc(300% + (2 * 16px));
-  }
-  #sec2 .product-slider .slider-inner .new-con {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, minmax(248px, auto));
     grid-auto-rows: minmax(248px, auto);
@@ -601,40 +584,40 @@ section .inner {
       "one two five six nine ten"
       "three four seven eight eleven twelve";
   }
-  #sec2 .product-slider .slider-inner .new-con .new-item:nth-child(1){
+  #sec2 .product-slider .new-con .new-item:nth-child(1){
     grid-area: one;
   }
-  #sec2 .product-slider .slider-inner .new-con .new-item:nth-child(2){
+  #sec2 .product-slider .new-con .new-item:nth-child(2){
     grid-area: two;
   }
-  #sec2 .product-slider .slider-inner .new-con .new-item:nth-child(3){
+  #sec2 .product-slider .new-con .new-item:nth-child(3){
     grid-area: three;
   }
-  #sec2 .product-slider .slider-inner .new-con .new-item:nth-child(4){
+  #sec2 .product-slider .new-con .new-item:nth-child(4){
     grid-area: four;
   }
-  #sec2 .product-slider .slider-inner .new-con .new-item:nth-child(5){
+  #sec2 .product-slider .new-con .new-item:nth-child(5){
     grid-area: five;
   }
-  #sec2 .product-slider .slider-inner .new-con .new-item:nth-child(6){
+  #sec2 .product-slider .new-con .new-item:nth-child(6){
     grid-area: six;
   }
-  #sec2 .product-slider .slider-inner .new-con .new-item:nth-child(7){
+  #sec2 .product-slider .new-con .new-item:nth-child(7){
     grid-area: seven;
   }
-  #sec2 .product-slider .slider-inner .new-con .new-item:nth-child(8){
+  #sec2 .product-slider .new-con .new-item:nth-child(8){
     grid-area: eight;
   }
-  #sec2 .product-slider .slider-inner .new-con .new-item:nth-child(9){
+  #sec2 .product-slider .new-con .new-item:nth-child(9){
     grid-area: nine;
   }
-  #sec2 .product-slider .slider-inner .new-con .new-item:nth-child(10){
+  #sec2 .product-slider .new-con .new-item:nth-child(10){
     grid-area: ten;
   }
-  #sec2 .product-slider .slider-inner .new-con .new-item:nth-child(11){
+  #sec2 .product-slider .new-con .new-item:nth-child(11){
     grid-area: eleven;
   }
-  #sec2 .product-slider .slider-inner .new-con .new-item:nth-child(12){
+  #sec2 .product-slider .new-con .new-item:nth-child(12){
     grid-area: twelve;
   }
   #sec2 .controller .pagers {

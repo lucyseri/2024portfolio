@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>장바구니</title>
+  <!-- js -->
+  <script src="../../../js/jquery-3.7.1.min.js"></script>
+  <script src="js/jq_common.js" defer></script>
+  <script src="js/js_cart.js" defer></script>
+  <!-- style -->
+  <link rel="stylesheet" href="css/pages/cart.css">
+</head>
+<body>
+  <div id="wrap">
+    <div class="header-include"></div>
+    <div class="container">
+      <section id="sec1">
+        <div class="inner">
+          <h2>장바구니</h2>
+          <table>
+            <thead>
+              <tr>
+                <th class="mobile">
+                  <input id="total-check" type="checkbox" checked>
+                  <label class="total-check-label" for="total-check"></label>
+                </th>
+                <th>상품정보</th>
+                <th>수량</th>
+                <th>주문금액</th>
+                <th>할인금액</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="check">
+                  <input id="check-btn" type="checkbox" checked>
+                  <label for="check-btn"></label>
+                </td>
+                <td class="thum-img">
+                  <img src="img/product/amuseables15.jpg" alt="상품 썸네일">
+                </td>
+                <td class="product-info">
+                  <p class="product-name">[어뮤저블]플랜츠 앤 우드 - 데이지</p>
+                  <p class="price">
+                    <span class="before-discount" data-price="19200"></span>
+                    <span class="after-discount" data-price="18500"></span>
+                  </p>
+                </td>
+                <td class="product-count have-label">
+                  <label for="count">수량</label>
+                  <div class="input-box">
+                    <span class="minus-btn"><span class="ir_pm">빼기</span></span>
+                    <input id="count" type="number" value="1" min="1">
+                    <span class="plus-btn"><span class="ir_pm">더하기</span></span>
+                  </div>
+                </td>
+                <td class="total-price have-label">
+                  <label for="total">주문금액</label>
+                  <div class="input-box">
+                    <input id="total" type="text" disabled value="18,500">
+                  </div>
+                </td>
+                <td class="discount-price have-label">
+                  <label for="discount">할인금액</label>
+                  <div class="input-box">
+                    <input id="discount" type="text" value="12,400" disabled>
+                  </div>
+                </td>
+                <td class="delete-btn">
+                  <img src="img/icon/close.svg" alt="삭제">
+                </td>
+              </tr>
+              <tr>
+                <td class="check">
+                  <input id="check-btn2" type="checkbox" checked>
+                  <label for="check-btn2"></label>
+                </td>
+                <td class="thum-img">
+                  <img src="img/product/amuseables15.jpg" alt="상품 썸네일">
+                </td>
+                <td class="product-info">
+                  <p class="product-name">[어뮤저블]플랜츠 앤 우드 - 데이지</p>
+                  <p class="price">
+                    <span class="before-discount" data-price="19200"></span>
+                    <span class="after-discount" data-price="18500"></span>
+                  </p>
+                </td>
+                <td class="product-count have-label">
+                  <label for="count2">수량</label>
+                  <div class="input-box">
+                    <span class="minus-btn"><span class="ir_pm">빼기</span></span>
+                    <input id="count2" type="number" value="1" min="1">
+                    <span class="plus-btn"><span class="ir_pm">더하기</span></span>
+                  </div>
+                </td>
+                <td class="total-price have-label">
+                  <label for="total2">주문금액</label>
+                  <div class="input-box">
+                    <input id="total2" type="text" disabled value="18,500">
+                  </div>
+                </td>
+                <td class="discount-price have-label">
+                  <label for="discount2">할인금액</label>
+                  <div class="input-box">
+                    <input id="discount2" type="text" value="12,400" disabled>
+                  </div>
+                </td>
+                <td class="delete-btn">
+                  <img src="img/icon/close.svg" alt="삭제">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="sec2">
+        <div class="inner">
+          <div class="caution">
+            <div class="txt-box">
+              <p>배송완료 후 14일 이내 청약철회(반품)가 가능합니다. 자세한 내용은 반품 및 환불을 확인해주세요.</p>
+            </div>
+            <div class="txt-box">
+              <p>배송정보안내</p>
+              <p>-3일 이내에 발송됩니다(주말 및 공휴일 제외) 주문 상품의 품절 및 배송 지연 예상 시에는 유선 또는 SMS 안내</p>
+              <p>-일부 군사지역은 배송이 불가능할 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="buy-summary">
+            <ul class="price-details">
+              <li>
+                <label for="product-price">총 상품금액</label>
+                <div class="input-box">
+                  <input id="product-price" type="text" disabled>
+                  <span>원</span>
+                </div>
+              </li>
+              <li>
+                <label for="shipment-price">배송비</label>
+                <div class="input-box">
+                  <input id="shipment-price" type="text" value="2,500" disabled data-price="2500">
+                  <span>원</span>
+                </div>
+              </li>
+              <li class="discount">
+                <label for="discounts-price">총 할인금액</label>
+                <div class="input-box">
+                  <input id="discounts-price" type="text" disabled>
+                  <span>원</span>
+                </div>
+              </li>
+              <li class="total">
+                <label for="total-price">총 결제 예정 금액</label>
+                <div class="input-box">
+                  <input id="total-price" type="text" disabled>
+                  <span>원</span>
+                </div>
+              </li>
+            </ul>
+            <button>주문하기</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="footer-include"></div>
+  </div>
+</body>
+</html>

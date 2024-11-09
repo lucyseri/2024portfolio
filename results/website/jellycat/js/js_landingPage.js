@@ -181,26 +181,23 @@ const rank = document.querySelectorAll(".rank");
 rank.forEach((el, idx)=>{
   el.innerText = idx + 1;
 });
+
 //new con
 const newProductSlider = document.querySelector('#sec2 .product-slider');
-const newProductSliderInner = document.querySelector('#sec2 .slider-inner');
 const newCon = document.querySelector('#sec2 .new-con');
 const newItem = document.querySelectorAll('#sec2 .new-item');
 const newPagers = document.querySelector('#sec2 .pagers');
 const newPager = document.querySelectorAll('#sec2 .pager');
-//new con - slider height
-let newConHeight = newCon.offsetHeight;
-newProductSlider.style.height = newCon.offsetHeight + "px";
-console.log(newCon.offsetHeight)
 //new con - slider
 let newPageNum = "";
+let slideItemGap = newItem[1].offsetLeft - newItem[0].offsetLeft - newItem[0].offsetWidth;
+console.log(slideItemGap);
 newPagers.addEventListener('click', function(e){
-  let slideItemGap = newItem[1].offsetLeft - newItem[0].offsetWidth;
   newPager.forEach((el, idx)=>{
     if(e.target == el){
       newPageNum = idx;
       el.classList.add('slide-on');
-      newProductSliderInner.style.left = -1 * (newProductSlider.offsetWidth + slideItemGap) * idx +"px"
+      newCon.style.transform = `translateX(${-1 * (newProductSlider.offsetWidth + slideItemGap) * idx}px)`;
     }else{
       el.classList.remove('slide-on');
     }
