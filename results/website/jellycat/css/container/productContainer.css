@@ -93,6 +93,7 @@ table tr td p{
   width: 100%;
   height: auto;
   opacity: 0.5;
+  cursor: pointer;
 }
 #sec1 .img-box .thum-box .thum-imgs li img.active-img{
   opacity: 1;
@@ -250,6 +251,12 @@ table tr td p{
 }
 #sec2 .product-details{
   padding: 32px 0;
+}
+#sec2 .product-details img{
+  display: block;
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
 }
 /*section3*/
 #sec3{

@@ -101,19 +101,9 @@
 #sec3 .products .best-item {
   width: 100%;
 }
-#sec3 .products .best-item a {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-#sec3 .products .best-item a img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
 #sec3 .products .best-item a .product-info {
   display: grid;
-  justify-content: space-between;
+  gap: 8px;
   grid-template-columns: minmax(30px, max-content) auto;
 }
 #sec3 .products .best-item a .product-info .rank {
@@ -124,41 +114,12 @@
   font-family: var(--primary-font);
   color: var(--txt1-color);
 }
-#sec3 .products .best-item a .product-info .product-description .name {
-  height: 56px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 22px;
-  color: var(--txt1-color);
-  padding: 8px 4px 4px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-#sec3 .products .best-item a .product-info .product-description .price-info {
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: auto auto;
-}
-#sec3 .products .best-item a .product-info .product-description .price-info .price{
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  color: var(--txt1-color);
-}
-#sec3 .products .best-item a .product-info .product-description .price-info .heart-icon {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: url("../../../img/icon/heart.svg") no-repeat center / 100%;
-}
 #sec3 .pager{
   display: grid;
   gap: 32px;
   justify-content: center;
   align-items: center;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 24px 24px 200px 24px 24px;
 }
 #sec3 .pager span{
   display: block;
@@ -174,12 +135,20 @@
 #sec3 .pager span.right-arrow img{
   transform: scaleX(-1);
 }
-#sec3 .pager .pager-btns{
-  display: grid;
-  gap: 8px;
-  grid-template-columns: repeat(2, 32px);
+#sec3 .pager span.big-right-arrow img{
+  transform: scaleX(-1);
 }
-#sec3 .pager .pager-btns li{
+#sec3 .pager .pager-box{
+  width: 200px;
+  height: 32px;
+  overflow: hidden;
+}
+#sec3 .pager .pager-box .pager-btns{
+  text-align: center;
+}
+#sec3 .pager .pager-box .pager-btns li{
+  display: inline-block;
+  width: 32px;
   height: 32px;
   line-height: 32px;
   border-radius: 50%;
@@ -187,6 +156,10 @@
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
+  margin: 0 4px;
+}
+#sec3 .pager .pager-box .pager-btns li.hide{
+  display: none !important;
 }
 #sec3 .pager .pager-btns li.current-page{
   background-color: var(--background-color);
@@ -227,48 +200,6 @@
   #sec3 .products .best-con .best-item a .product-info .rank {
     font-size: 24px;
   }
-  #sec3 .products .best-con .best-item a .product-info .product-description .price-info .heart-icon {
-    width: 18px;
-    height: 18px;
-  }
-  #sec3 .pager{
-    display: grid;
-    gap: 32px;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: auto auto auto;
-  }
-  #sec3 .pager span{
-    display: block;
-    width: 24px;
-    height: 24px;
-  }
-  #sec3 .pager span img{
-    display: block;
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-  }
-  #sec3 .pager span.right-arrow img{
-    transform: scaleX(-1);
-  }
-  #sec3 .pager .pager-btns{
-    display: grid;
-    gap: 8px;
-    grid-template-columns: repeat(2, 32px);
-  }
-  #sec3 .pager .pager-btns li{
-    height: 32px;
-    line-height: 32px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  #sec3 .pager .pager-btns li.current-page{
-    background-color: var(--background-color);
-  }
 }
 @media only screen and (max-width: 360px){
   /*layout*/
@@ -291,5 +222,13 @@
   }
   #sec3 .products .best-con {
     grid-template-columns: repeat(2, 1fr);
+  }
+  #sec3 .pager{
+    gap: 8px;
+    grid-template-columns: 20px 20px 200px 20px 20px;
+  }
+  #sec3 .pager span{
+    width: 20px;
+    height: 20px;
   }
 }

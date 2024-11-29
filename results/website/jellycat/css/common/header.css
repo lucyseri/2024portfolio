@@ -72,6 +72,22 @@ header .inner .goto-menus{
 header .inner .goto-menus .goto-icon{
   width: 24px;
   height: 24px;
+  position: relative;
+}
+header .inner .goto-menus .web-cart::after{
+  content: "4";
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  color: var(--onPrimary-color);
+  font-size: 10px;
+  line-height: 16px;
+  position: absolute;
+  z-index: 10;
+  top: -4px;
+  right: -8px;
 }
 header .inner .goto-menus .mobile-icon{
   display: none;
@@ -142,6 +158,7 @@ nav .inner .mobile-goto .goto-icon a .menu-img{
   width: 24px;
   height: 24px;
   margin: 0 auto;
+  position: relative;
 }
 nav .inner .mobile-goto .goto-icon:nth-child(1) a .menu-img{
   background: url("../../img/icon/user.svg") no-repeat center / 100%;
@@ -151,6 +168,20 @@ nav .inner .mobile-goto .goto-icon:nth-child(2) a .menu-img{
 }
 nav .inner .mobile-goto .goto-icon:nth-child(3) a .menu-img{
   background: url("../../img/icon/search.svg") no-repeat center / 100%;
+}
+nav .inner .mobile-goto .goto-icon:nth-child(2) a .menu-img::after{
+  content: "4";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  color: var(--onPrimary-color);
+  font-size: 12px;
+  line-height: 16px;
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  text-align: center;
 }
 nav .inner .mobile-goto .goto-icon a .menu-txt{
   font-size: 14px;

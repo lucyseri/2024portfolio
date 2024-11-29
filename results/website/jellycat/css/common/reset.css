@@ -38,9 +38,58 @@ h3{
   font-size: 18px;
   line-height: 22px;
 }
-@media only screen and (max-width: 768px) {
+.hide-title{
+  display: none;
+}
+.product-compo a{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.product-compo a img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*best product list*/
+.product-info .name {
+  height: 56px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--txt1-color);
+  padding: 8px 4px 4px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.product-info .price-info {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+}
+.product-info .price-info .price{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--txt1-color);
+}
+.product-info .price-info .heart-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../../img/icon/heart.svg") no-repeat center / 100%;
+}
+/*default products list*/
+@media only screen and (max-width: 768px){
   h2{
     font-size: 22px;
     line-height: 30px;
+  }
+  /*best products*/
+  .product-info .price-info .heart-icon {
+    width: 18px;
+    height: 18px;
   }
 }

@@ -13,11 +13,18 @@ const productDiscount = document.querySelectorAll('#sec1 td.discount-price input
 const minusBtn = document.querySelectorAll('.minus-btn');
 const plusBtn = document.querySelectorAll('.plus-btn');
 const deleteBtn = document.querySelectorAll('td.delete-btn img');
+//empty
+const emptyCart = document.querySelector(".empty-cart");
 //section2: summary
 const productsPrice = document.querySelector('#product-price');
 const shipment = document.querySelector("#shipment-price");
 const discountsPrice = document.querySelector("#discounts-price");
 const totalPrice = document.querySelector('#total-price');
+//price setting
+for(let i=0;i<tr.length;i++){
+  productTotalPrice[i].value = parseInt(afterDiscount[i].getAttribute('data-price') * count[i].value).toLocaleString('ko-KR');
+  productDiscount[i].value = parseInt((beforeDiscount[i].getAttribute('data-price') - afterDiscount[i].getAttribute('data-price'))*count[i].value).toLocaleString('ko-KR');
+};
 //section1: product info - product check
 let productsPriceArr = [];
 let discountsPriceArr = [];
@@ -34,8 +41,6 @@ function productsPriceFn(el){
     }
   }
   buySummary();
-  console.log(productsPriceArr);
-  console.log(discountsPriceArr);
 }
 for(const check of checks){
   check.addEventListener("click", function(){
@@ -116,6 +121,10 @@ table.addEventListener('click', function(e){
         const newChecks = document.querySelectorAll('#sec1 td.check input');
         productsPriceFn(newChecks);
         buySummary();
+        if(productsPriceArr.length == 0){
+          table.style.display = "none";
+          emptyCart.style.display = "block";
+        }
       } 
     })
   }
