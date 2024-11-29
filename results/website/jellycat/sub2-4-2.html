@@ -7,9 +7,9 @@
   <!-- js & jq -->
   <script src="../../../js/jquery-3.7.1.min.js"></script>
   <script src="js/jq_common.js" defer></script>
-  <script src="js/sub2/js_sub2-4-2.js" defer></script>
+  <script type="module" src="js/sub2/js_sub2-4-2.js"></script>
   <!-- style -->
-  <link rel="stylesheet" href="css/pages/sub2/sub2-1-1.css">
+  <link rel="stylesheet" href="css/pages/sub2/sub2-1.css">
 </head>
 <body>
   <div id="wrap">
@@ -61,12 +61,16 @@
             </ul>
           </div>
           <div class="pager">
+            <span class="arrow-btn big-left-arrow"><img src="img/icon/big-arrow.svg" alt="이전"></span>
             <span class="arrow-btn left-arrow"><img src="img/icon/arrow.svg" alt="이전"></span>
-            <ul class="pager-btns">
-              <li class="current-page">1</li>
-              <li>2</li>
-            </ul>
+            <div class="pager-box">
+              <ul class="pager-btns">
+                <li class="current-page">1</li>
+                <li>2</li>
+              </ul>
+            </div>
             <span class="arrow-btn right-arrow"><img src="img/icon/arrow.svg" alt="다음"></span>
+            <span class="arrow-btn big-right-arrow"><img src="img/icon/big-arrow.svg" alt="다음"></span>
           </div>
         </div>
       </section>
