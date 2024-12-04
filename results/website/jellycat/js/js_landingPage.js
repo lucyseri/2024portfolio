@@ -196,18 +196,18 @@ Bestproducts.prototype.productInfoFn = function(){
   bestPriceArr.push(this.price);
 };
 let bestProductInfo = [
-  new Bestproducts('img/product/animals1.jpg', '[애니멀]배쉬풀 버니 - 소프트 핑크', '58,450원'),
-  new Bestproducts('img/product/amuseables15.jpg', '[애니멀]배쉬풀 버니 - 레드', '58,450원'),
-  new Bestproducts('img/product/amuseables15.jpg', '[애니멀]배쉬풀 버니 - 옐로우', '58,450원'),
-  new Bestproducts('img/product/animals3.jpg', '[애니멀]배쉬풀 버니 - 그린', '58,450원'),
-  new Bestproducts('img/product/animals4.jpg', '[애니멀]배쉬풀 버니 - 네이비', '58,450원'),
-  new Bestproducts('img/product/animals5.jpg', '[애니멀]배쉬풀 버니 - 플라워 핑크', '58,450원'),
-  new Bestproducts('img/product/animals6.jpg', '[애니멀]배쉬풀 버니 - 소프트 핑크', '58,450원'),
-  new Bestproducts('img/product/animals7.jpg', '[애니멀]배쉬풀 버니 - 소프트 핑크', '58,450원'),
-  new Bestproducts('img/product/animals8.jpg', '[애니멀]배쉬풀 버니 - 소프트 핑크', '58,450원'),
-  new Bestproducts('img/product/animals9.jpg', '[애니멀]배쉬풀 버니 - 소프트 핑크', '58,450원'),
-  new Bestproducts('img/product/animals10.jpg', '[애니멀]배쉬풀 버니 - 소프트 핑크', '58,450원'),
-  new Bestproducts('img/product/animals0.jpg', '[애니멀]배쉬풀 버니 - 소프트 핑크', '58,450원')
+  new Bestproducts('img/product/animals5.jpg', '[애니멀]배쉬풀 버니즈 - 소프트 하트 버니', '58,450원'),
+  new Bestproducts('img/product/animals6.jpg', '[애니멀]배쉬풀 버니즈 - 소프트 체리 버니', '58,450원'),
+  new Bestproducts('img/product/animals7.jpg', '[애니멀]배쉬풀 버니즈 - 소프트 코랄핑크 버니', '58,450원'),
+  new Bestproducts('img/product/animals8.jpg', '[애니멀]배쉬풀 버니즈 - 소프트 페일핑크 버니', '58,450원'),
+  new Bestproducts('img/product/animals9.jpg', '[애니멀]배쉬풀 버니즈 - 소프트 플라워 패치 베이지 버니', '58,450원'),
+  new Bestproducts('img/product/animals10.jpg', '[애니멀]배쉬풀 버니즈 - 소프트 플라워 패치 페일 퍼플 버니', '58,450원'),
+  new Bestproducts('img/product/animals11.jpg', '[애니멀]할로윈 - 소프트 핑크 버니즈', '58,450원'),
+  new Bestproducts('img/product/amuseables7.jpg', '[어뮤저블]스낵바 - 소프트 바닐라 콘 아이스크림', '58,450원'),
+  new Bestproducts('img/product/animals12.jpg', '[애니멀스]베쉬풀 버니즈 - 소프트 크리스마스 트리 버니', '58,450원'),
+  new Bestproducts('img/product/amuseables8.jpg', '[어뮤저블]스낵바 - 비타민 에너지 쥬스', '58,450원'),
+  new Bestproducts('img/product/animals13.jpg', '[애니멀스]배쉬풀 버니즈 - 소프트 당근 버니', '58,450원'),
+  new Bestproducts('img/product/amuseables9.jpg', '[어뮤저블]스낵바 - 핫도그', '58,450원')
 ];
 for(let i =0; i < bestItemLi.length; i++){
   bestProductInfo[i].productInfoFn();
@@ -235,18 +235,18 @@ function Newproducts(pimg, pn, pp){
   this.productprice = pp;
 };
 let newProductsInfo = [
-  new Newproducts('img/product/amuseables0.jpg', '[어뮤저블]디저트카페 - 딸기무스1', '24,500원'),
-  new Newproducts('img/product/amuseables1.jpg', '[어뮤저블]디저트카페 - 딸기무스2', '24,500원'),
-  new Newproducts('img/product/amuseables2.jpg', '[어뮤저블]디저트카페 - 딸기무스3', '24,500원'),
-  new Newproducts('img/product/amuseables3.jpg', '[어뮤저블]디저트카페 - 딸기무스4', '25,500원'),
-  new Newproducts('img/product/amuseables4.jpg', '[어뮤저블]디저트카페 - 딸기무스5', '24,500원'),
-  new Newproducts('img/product/amuseables5.jpg', '[어뮤저블]디저트카페 - 딸기무스6', '24,500원'),
-  new Newproducts('img/product/amuseables6.jpg', '[어뮤저블]디저트카페 - 딸기무스7', '44,500원'),
-  new Newproducts('img/product/amuseables7.jpg', '[어뮤저블]디저트카페 - 딸기무스8', '24,500원'),
-  new Newproducts('img/product/amuseables8.jpg', '[어뮤저블]디저트카페 - 딸기무스9', '24,500원'),
-  new Newproducts('img/product/amuseables9.jpg', '[어뮤저블]디저트카페 - 딸기무스10', '24,500원'),
-  new Newproducts('img/product/amuseables10.jpg', '[어뮤저블]디저트카페 - 딸기무스11', '28,500원'),
-  new Newproducts('img/product/amuseables11.jpg', '[어뮤저블]디저트카페 - 딸기무스12', '24,500원')
+  new Newproducts('img/product//gift1.jpg', '[어뮤저블]크리스마스 - 소프트 트리', '44,500원'),
+  new Newproducts('img/product/gift2.jpg', '[어뮤저블]크리스마스 - 소프트 리스', '24,500원'),
+  new Newproducts('img/product/accessories0.jpg', '[악세서리]가방 - 소프트 하트 크로스백', '24,500원'),
+  new Newproducts('img/product/amuseables1.jpg', '[어뮤저블]할로윈 - 소프트 미라', '24,500원'),
+  new Newproducts('img/product/amuseables2.jpg', '[어뮤저블]할로윈 - 소프트 스켈레톤', '24,500원'),
+  new Newproducts('img/product/amuseables3.jpg', '[어뮤저블]할로윈 - 소프트 유령', '25,500원'),
+  new Newproducts('img/product/amuseables4.jpg', '[어뮤저블]할로윈 - 뱀파이어 가지', '24,500원'),
+  new Newproducts('img/product/amuseables5.jpg', '[어뮤저블]할로윈 - 펌킨', '24,500원'),
+  new Newproducts('img/product/animals42.jpg', '[애니멀스]농장 라이프 - 아기 오리', '24,500원'),
+  new Newproducts('img/product/animals43.jpg', '[애니멀스]농장 라이프 - 오리 가족', '24,500원'),
+  new Newproducts('img/product/animals44.jpg', '[애니멀스]농장 라이프 - 닭', '28,500원'),
+  new Newproducts('img/product/animals45.jpg', '[애니멀스]농장 라이프 - 양', '24,500원')
 ];
 let newImgArr = [];
 let newNameArr = [];
@@ -298,18 +298,18 @@ lineThum.style.height = thumUl.offsetHeight + "px";
 let thumSlideNum = 0;
 let thumImgGap = thumUlImg[1].offsetLeft - thumUlImg[0].offsetLeft;
 thumLeftArrow.addEventListener('click', function(){
-  if((thumUl.offsetWidth + thumSlide.offsetLeft) < lineThum.offsetWidth){
-    thumSlide.style.left = -3 * thumSlideNum * thumImgGap + "px";
-  }else{
-    thumSlideNum++;
-    thumSlide.style.left = -3 * thumSlideNum * thumImgGap + "px";
-  }
-});
-thumRightArrow.addEventListener('click', function(){
   if(thumSlide.offsetLeft >= 0){
     thumSlide.style.left = -3 * thumSlideNum * thumImgGap + "px";
   }else{
     thumSlideNum--;
+    thumSlide.style.left = -3 * thumSlideNum * thumImgGap + "px";
+  }
+});
+thumRightArrow.addEventListener('click', function(){
+  if((thumUl.offsetWidth + thumSlide.offsetLeft) < lineThum.offsetWidth){
+    thumSlide.style.left = -3 * thumSlideNum * thumImgGap + "px";
+  }else{
+    thumSlideNum++;
     thumSlide.style.left = -3 * thumSlideNum * thumImgGap + "px";
   }
 });
@@ -350,6 +350,7 @@ function Lineinfo(category, line, des1, des2){
   this.des2 = des2;
 };
 let lineInfoData = [
+  new Lineinfo('Discover', 'White Christmas', '이번 크리스마스에는 산타 할아버지가', '가장 포근하고 부드러운 선물을 줄 예정이래요!'),
   new Lineinfo('Discover', 'Soft Halloween', '트릭 올 트릿!', '젤리캣에서 준비하는 가장 부드럽고 으시시한 할로윈'),
   new Lineinfo('Animal', 'Bashful Bunnies', '알록달록 젤리캣 버니', '빨주노초파남보...그리고 더!'),
   new Lineinfo('Animal', 'Fram Life', '꼬끼오~ 음매~ 이히히힝~ 꿀꿀~', '젤리캣 농장에 사는 친구들은 모두 부드럽고 사랑스럽습니다'),
@@ -376,6 +377,7 @@ function Hashtag(tag1, tag2, tag3, tag4, tag5){
   this.tag5 = tag5;
 }
 let lineHashTags =[
+  new Hashtag('#소프트토이', '#크리스마스', '#어뮤저블', '#산타', ''),
   new Hashtag('#소프트토이', '#할로윈', '#어뮤저블', '', ''),
   new Hashtag('#애착인형', '#애니멀', '#소프트토이', '#버니즈', '#토끼'),
   new Hashtag('#애니멀', '#소프트토이', '#애착인형', '#농장', ''),
@@ -400,6 +402,10 @@ function LineProducts(img, name, price, line){
   this.line = line;
 };
 let lineProdutData = [
+  new LineProducts('img/product/amuseables52.jpg', '[어뮤저블]화이트 크리스마스 - 선물상자', '48,450원', '화이트 크리스마스'),
+  new LineProducts('img/product/amuseables53.jpg', '[어뮤저블]화이트 크리스마스 - 크리스마스 푸딩', '48,450원', '화이트 크리스마스'),
+  new LineProducts('img/product/gift2.jpg', '[어뮤저블]화이트 크리스마스 - 리스', '48,450원', '화이트 크리스마스'),
+  new LineProducts('img/product/gift1.jpg', '[어뮤저블]화이트 크리스마스 - 트리', '48,450원', '화이트 크리스마스'),
   new LineProducts('img/product/amuseables1.jpg', '[어뮤저블]소프트 할로윈 - 소프트 미라', '48,450원', '소프트 할로윈'),
   new LineProducts('img/product/amuseables2.jpg', '[어뮤저블]소프트 할로윈 - 스켈레톤 밥', '46,450원', '소프트 할로윈'),
   new LineProducts('img/product/amuseables3.jpg', '[어뮤저블]소프트 할로윈 - 소프트 유령', '32,450원', '소프트 할로윈'),
