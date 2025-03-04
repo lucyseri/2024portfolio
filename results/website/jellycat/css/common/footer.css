@@ -9,7 +9,7 @@ footer .inner{
 }
 footer .footer-nav{
   border-bottom: 1px solid var(--border-color);
-  padding: 20px 0;
+  padding: 20px;
 }
 footer .footer-nav ul{
   display: grid;
@@ -21,6 +21,9 @@ footer .footer-nav ul li a{
   font-weight: 500;
   line-height: 24px;
   color: var(--txt1-color);
+}
+footer .footer-address{
+  padding: 0 20px;
 }
 footer .footer-address .policy{
   padding: 24px 0;
@@ -35,23 +38,19 @@ footer .footer-address .policy li a{
 }
 footer .footer-address address{
   font-style: normal;
+  word-break: keep-all;
 }
 footer .footer-address address span{
   font-size: 14px;
   line-height: 24px;
-  padding-right: 24px;
   color: var(--txt1-color);
-  position: relative;
 }
 footer .footer-address address span:not(:last-child)::after{
   content: "";
-  display: block;
+  display: inline-block;
   width: 1px;
   height: 10px;
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: 0 12px;
   background-color: var(--txt1-color);
 }
 footer .footer-address .copyright{
@@ -63,6 +62,9 @@ footer .footer-address .copyright{
   footer .inner{
     max-width: 704px;
   }
+  footer .footer-nav{
+    padding: 20px 32px;
+  }
   footer .footer-nav ul{
     display: block;
   }
@@ -72,6 +74,9 @@ footer .footer-address .copyright{
   }
   footer .footer-nav ul li a{
     font-size: 14px;
+  }
+  footer .footer-address{
+    padding: 0 32px;
   }
   footer .footer-address .policy{
     padding: 16px 0;
@@ -86,5 +91,8 @@ footer .footer-address .copyright{
 @media only screen and (max-width: 360px) {
   footer .inner{
     max-width: 320px;
+  }
+  footer .footer-address{
+    padding: 0 20px;
   }
 }

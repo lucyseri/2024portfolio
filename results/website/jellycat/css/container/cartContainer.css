@@ -1,6 +1,7 @@
 /*layout*/
 .container{
   margin: 60px 0;
+  padding: 0 20px;
 }
 .container section .inner{
   width: 100%;
@@ -316,6 +317,9 @@ input, button{
 }
 @media only screen and (max-width: 768px) {
   /*layout*/
+  .container{
+    padding: 0 32px;
+  }
   .container section .inner{
     max-width: 704px;
   }
@@ -442,6 +446,9 @@ input, button{
 }
 @media only screen and (max-width: 360px) {
   /*layout*/
+  .container{
+    padding: 0 20px;
+  }
   .container section .inner{
     max-width: 320px;
   }

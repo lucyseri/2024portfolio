@@ -1,11 +1,11 @@
 /*layout*/
-.container{
-  min-height: calc(100vh - 157px - 200px);
+main section{
+  padding: calc((100vh - 157px - 200px - 312px) / 2) 20px;
 }
-.container section .inner{
+main section .inner{
   width: 100%;
   max-width: 392px;
-  margin: 60px auto;
+  margin: 0 auto;
 }
 /*section1*/
 .sec1 .inner h2{
@@ -85,13 +85,19 @@
 .sec1 .inner form .page-goto .join-page:hover{
   color: var(--secondary-color);
 }
-@media only screen and(max-width: 768px) {
-  .container .inner{
+@media only screen and (max-width: 768px) {
+  main section{
+    padding: calc((100vh - 80px - 220px - 302px) / 2) 32px;
+  }
+  main section .inner{
     max-width: 464px;
   }
 }
-@media only screen and(max-width: 360px) {
-  .container section .inner{
+@media only screen and (max-width: 360px) {
+  main section{
+    padding: calc((100vh - 80px - 220px - 302px) / 2) 20px;
+  }
+  main section .inner{
     max-width: 320px;
   }
   .sec1 .inner h2{

@@ -1,8 +1,8 @@
 /*layout*/
-.container{
-  padding: 60px 0;
+main{
+  padding: 60px 20px;
 }
-.container section .inner{
+main section .inner{
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
@@ -274,10 +274,10 @@ table tr td p{
 }
 @media only screen and (max-width: 768px) {
   /*layout*/
-  .container{
-    padding: 40px 0;
+  main{
+    padding: 40px 32px;
   }
-  .container section .inner{
+  main section .inner{
     max-width: 704px;
   }
   /*common*/
@@ -371,7 +371,10 @@ table tr td p{
 }
 @media only screen and (max-width: 360px) {
   /*layout*/
-  .container section .inner{
+  main{
+    padding: 40px 20px;
+  }
+  main section .inner{
     max-width: 320px;
   }
   /*common*/

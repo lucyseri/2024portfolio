@@ -5,8 +5,9 @@ section {
 }
 section .inner {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1280px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 /*common*/
 .pagers {
@@ -397,6 +398,12 @@ section .inner {
   gap: 12px;
 }
 @media only screen and (max-width: 768px) {
+  /*layout*/
+  section .inner {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  /*bnner*/
   #banner .banner-inner {
     max-width: 704px;
   }
@@ -414,10 +421,6 @@ section .inner {
   }
   #banner .banner-inner .arrow-btns {
     padding: 0;
-  }
-  /*layout*/
-  section .inner {
-    max-width: 704px;
   }
   /*section1*/
   #sec1 .best-con {
@@ -494,6 +497,12 @@ section .inner {
   }
 }
 @media only screen and (max-width: 360px) {
+  /*layout*/
+  section .inner {
+    max-width: 360px;
+    padding: 0 20px;
+  }
+  /*banner*/
   #banner .banner-inner {
     max-width: 360px;
   }
@@ -508,10 +517,6 @@ section .inner {
   }
   #banner .banner-inner .slider .img-gallery .img-slide a .mobile-banner {
     display: block;
-  }
-  /*layout*/
-  section .inner {
-    max-width: 320px;
   }
   /*section1 - best con*/
   #sec1 .best-con {

@@ -3,7 +3,7 @@ form ul li{
   display: grid;
   gap: 32px;
   grid-template-columns: minmax(30px, 94px) auto;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 form ul li .label{
   font-size: 16px;
@@ -37,7 +37,7 @@ form ul li .input-box .input-list input, select{
   background-color: var(--background-color);
 }
 form ul li .input-box .input-list input{
-  padding: 16px;
+  padding: 8px 16px;
 }
 form ul li .input-box .input-list select{
   background: url("../../img/icon/down-arrow.svg") no-repeat right 8px center / 20px;
@@ -45,7 +45,7 @@ form ul li .input-box .input-list select{
   -webkit-appearance:none; 
   -moz-appearance:none; 
   appearance:none;
-  padding: 16px 30px 16px 16px;
+  padding: 8px 30px 8px 16px;
 }
 form ul li .input-box .input-list input::placeholder{
   font-size: 14px;
@@ -69,13 +69,16 @@ form ul li .input-box .input-list .txt{
   text-align: center;
 }
 /*layout*/
-.container section .inner{
+main section{
+  padding: 0 20px;
+}
+main section .inner{
   width: 100%;
   max-width: 816px;
   margin: 0 auto;
   padding: 60px 0;
 }
-.container .inner h2{
+main .inner h2{
   text-align: center;
 }
 /*section1*/
@@ -109,7 +112,7 @@ form ul li .input-box .input-list .txt{
   grid-template-columns: 0 minmax(auto, 180px) 32px;
 }
 .sec1 .inner form .user-info .address-list .input-box{
-  grid-template-rows: repeat(3, minmax(60px, auto));
+  grid-template-rows: repeat(3, minmax(44px, auto));
   gap: 8px;
 }
 .sec1 .inner form .user-info .address-list .input-box .input-list:nth-child(1){
@@ -166,7 +169,10 @@ form ul li .input-box .input-list .txt{
     margin-left: 16px;
   }
   /*layout*/
-  .container section .inner{
+  main section{
+    padding: 0 32px;
+  }
+  main section .inner{
     max-width: 704px;
   }
   /*form*/
@@ -179,8 +185,9 @@ form ul li .input-box .input-list .txt{
   }
   .sec1 .inner form .user-info .email-list .input-box{
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, minmax(60px, auto));
+    grid-template-rows: repeat(2, minmax(44px, auto));
     gap: 8px 16px;
+    margin-bottom: 8px;
   }
   .sec1 .inner form .user-info .email-list .input-box .input-list:nth-child(1){
     grid-area: 1/1/2/4;
@@ -195,8 +202,9 @@ form ul li .input-box .input-list .txt{
   }
   .sec1 .inner form .user-info .birth-list .input-box{
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, minmax(60px, auto));
+    grid-template-rows: repeat(2, minmax(44px, auto));
     gap: 8px 16px;
+    margin-bottom: 8px;
   }
   .sec1 .inner form .user-info .birth-list .input-box .input-list{
     grid-template-columns: 0 auto 32px;
@@ -250,7 +258,10 @@ form ul li .input-box .input-list .txt{
     margin-left: 16px;
   }
   /*layout*/
-  .container section .inner{
+  main section{
+    padding: 0 20px;
+  }
+  main section .inner{
     max-width: 320px;
   }
   /*form*/

@@ -6,12 +6,14 @@
   left: 0;
   z-index: 100;
 }
-/*header*/
-header{
+/*top header*/
+.top-header{
   width: 100%;
   background-color: #fff;
+  overflow-x: hidden;
+  padding: 0 20px;
 }
-header .inner{
+.top-header .inner{
   width: 100%;
   padding: 16px 0;
   max-width: 1240px;
@@ -21,25 +23,25 @@ header .inner{
   align-items: center;
   grid-template-columns: 212px minmax(320px, 604px) 212px;
 }
-header .inner h1{
+.top-header .inner h1{
   width: 212px;
 }
-header .inner h1 a{
+.top-header .inner h1 a{
   display: block;
   width: 100%;
   height: 100%;
 }
-header .inner h1 a img{
+.top-header .inner h1 a img{
   display: block;
   width: 100%;
   height: auto;
 }
-header .inner form{
+.top-header .inner form{
   width: 100%;
   padding: none;
   margin: none;
 }
-header .inner form .search-box{
+.top-header .inner form .search-box{
   width: 100%;
   padding: 8px 16px;
   background-color: var(--background-color);
@@ -48,7 +50,7 @@ header .inner form .search-box{
   grid-template-columns: auto 24px;
   justify-content: space-between;
 }
-header .inner form .search-box input{
+.top-header .inner form .search-box input{
   display: inline-block;
   width: calc(100% - 24px);
   border: none;
@@ -56,25 +58,25 @@ header .inner form .search-box input{
   background-color: transparent;
   font-size: 14px;
 }
-header .inner form .search-box button{
+.top-header .inner form .search-box button{
   display: block;
   width: 24px;
   height: 24px;
   background: url("../../img/icon/search.svg") no-repeat center / 100%;
   border: none;
 }
-header .inner .goto-menus{
+.top-header .inner .goto-menus{
   display: grid;
   justify-content: right;
   grid-template-columns: 24px 24px;
   gap: 12px;
 }
-header .inner .goto-menus .goto-icon{
+.top-header .inner .goto-menus .goto-icon{
   width: 24px;
   height: 24px;
   position: relative;
 }
-header .inner .goto-menus .web-cart::after{
+.top-header .inner .goto-menus .web-cart::after{
   content: "4";
   width: 16px;
   height: 16px;
@@ -89,87 +91,88 @@ header .inner .goto-menus .web-cart::after{
   top: -4px;
   right: -8px;
 }
-header .inner .goto-menus .mobile-icon{
+.top-header .inner .goto-menus .mobile-icon{
   display: none;
 }
-header .inner .goto-menus .goto-icon a{
+.top-header .inner .goto-menus .goto-icon a{
   display: block;
   width: 100%;
   height: auto;
 }
-header .inner .goto-menus .goto-icon a img{
+.top-header .inner .goto-menus .goto-icon a img{
   display: block;
   width: 100%;
   height: auto;
 }
 /*nav*/
-nav{
+#nav{
   width: 100%;
   height: 40px;
   background-color: #fff;
+  padding: 0 20px;
 }
-nav .inner{
+#nav .inner{
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
 }
-nav .inner .mobile-header{
+#nav .inner .mobile-header{
   display: none;
   justify-content: space-between;
   align-items: center;
   grid-template-columns: 120px 24px;
 }
-nav .inner .mobile-header .mobile-logo{
+#nav .inner .mobile-header .mobile-logo{
   width: 120px;
 }
-nav .inner .mobile-header .mobile-logo a{
+#nav .inner .mobile-header .mobile-logo a{
   display: block;
   width: 100%;
   height: auto;
 }
-nav .inner .mobile-header .mobile-logo a img{
+#nav .inner .mobile-header .mobile-logo a img{
   display: block;
   width: 100%;
   height: auto;
 }
-nav .inner .mobile-header .close-btn img{
+#nav .inner .mobile-header .close-btn img{
   display: block;
   width: 100%;
   height: auto;
   cursor: pointer;
 }
-nav .inner .mobile-goto{
+#nav .inner .mobile-goto{
   display: none;
   padding: 16px 0;
   gap: 16px;
   grid-template-columns: repeat(3, 1fr);
 }
-nav .inner .mobile-goto .goto-icon{
+#nav .inner .mobile-goto .goto-icon{
   background-color: var(--background-color);
   border-radius: 8px;
 }
-nav .inner .mobile-goto .goto-icon a{
+#nav .inner .mobile-goto .goto-icon a{
   display: grid;
   justify-content: center;
   padding: 16px 0;
 }
-nav .inner .mobile-goto .goto-icon a .menu-img{
+#nav .inner .mobile-goto .goto-icon a .menu-img{
   display: block;
   width: 24px;
   height: 24px;
   margin: 0 auto;
   position: relative;
 }
-nav .inner .mobile-goto .goto-icon:nth-child(1) a .menu-img{
+#nav .inner .mobile-goto .goto-icon:nth-child(1) a .menu-img{
   background: url("../../img/icon/user.svg") no-repeat center / 100%;
 }
-nav .inner .mobile-goto .goto-icon:nth-child(2) a .menu-img{
+#nav .inner .mobile-goto .goto-icon:nth-child(2) a .menu-img{
   background: url("../../img/icon/shopping-bag.svg") no-repeat center / 100%;
 }
-nav .inner .mobile-goto .goto-icon:nth-child(3) a .menu-img{
+#nav .inner .mobile-goto .goto-icon:nth-child(3) a .menu-img{
   background: url("../../img/icon/search.svg") no-repeat center / 100%;
 }
-nav .inner .mobile-goto .goto-icon:nth-child(2) a .menu-img::after{
+#nav .inner .mobile-goto .goto-icon:nth-child(2) a .menu-img::after{
   content: "4";
   width: 16px;
   height: 16px;
@@ -183,29 +186,29 @@ nav .inner .mobile-goto .goto-icon:nth-child(2) a .menu-img::after{
   right: -6px;
   text-align: center;
 }
-nav .inner .mobile-goto .goto-icon a .menu-txt{
+#nav .inner .mobile-goto .goto-icon a .menu-txt{
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
   color: var(--txt2-color);
   margin-top: 4px;
 }
-nav .inner .lnb{
+#nav .inner .lnb{
   width: 100%;
   display: grid;
   grid-template-columns: repeat(7, minmax(40px, max-content));
 }
-nav .inner .lnb .depth1{
+#nav .inner .lnb .depth1{
   position: relative;
   padding-right: 24px;
 }
-nav .inner .lnb .depth1 .depth1-txt{
+#nav .inner .lnb .depth1 .depth1-txt{
   display: grid;
   justify-content: left;
   align-items: center;
   grid-template-columns: repeat(2, minmax(24px, max-content));
 }
-nav .inner .lnb .depth1 .depth1-txt a{
+#nav .inner .lnb .depth1 .depth1-txt a{
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
@@ -213,7 +216,7 @@ nav .inner .lnb .depth1 .depth1-txt a{
   color: var(--txt1-color);
   position: relative;
 }
-nav .inner .lnb .depth1 .depth1-txt a::before{
+#nav .inner .lnb .depth1 .depth1-txt a::before{
   content: "";
   display: none;
   width: 100%;
@@ -224,25 +227,25 @@ nav .inner .lnb .depth1 .depth1-txt a::before{
   bottom: 0;
   left: 0;
 }
-nav .inner .lnb .depth1:hover .depth1-txt a::before{
+#nav .inner .lnb .depth1:hover .depth1-txt a::before{
   display: block;
 }
-nav .inner .lnb .depth1 .depth1-txt .arrow-btn{
+#nav .inner .lnb .depth1 .depth1-txt .arrow-btn{
   display: none;
   width: 24px;
   height: 24px;
 }
-nav .inner .lnb .depth1 .depth1-txt .arrow-btn img{
+#nav .inner .lnb .depth1 .depth1-txt .arrow-btn img{
   display: block;
   width: 100%;
   height: auto;
   transform: rotate(-90deg);
   cursor: pointer;
 }
-nav .inner .lnb .depth1 .depth1-txt .arrow-btn img.gnb-on{
+#nav .inner .lnb .depth1 .depth1-txt .arrow-btn img.gnb-on{
   transform: rotate(90deg);
 }
-nav .inner .lnb .depth1 .gnb{
+#nav .inner .lnb .depth1 .gnb{
   display: none;
   width: auto;
   position: absolute;
@@ -251,10 +254,10 @@ nav .inner .lnb .depth1 .gnb{
   padding: 8px 0;
   gap: 24px;
 }
-nav .inner .lnb .depth1:hover .gnb{
+#nav .inner .lnb .depth1:hover .gnb{
   display: grid;
 }
-nav .inner .lnb .depth1 .gnb::before{
+#nav .inner .lnb .depth1 .gnb::before{
   content: "";
   display: none;
   width: 100vw;
@@ -265,18 +268,18 @@ nav .inner .lnb .depth1 .gnb::before{
   left: 0;
   z-index: -1;
 }
-nav .inner .lnb .depth1:hover .gnb::before{
+#nav .inner .lnb .depth1:hover .gnb::before{
   display: block;
 }
-nav .inner .lnb .depth1 .gnb .depth2{
+#nav .inner .lnb .depth1 .gnb .depth2{
   display: block;
 }
-nav .inner .lnb .depth1 .gnb .depth2 a{
+#nav .inner .lnb .depth1 .gnb .depth2 a{
   display: block;
   font-size: 16px;
   color: var(--txt2-color);
 }
-nav .inner .lnb .depth1 .gnb .depth2 a:hover{
+#nav .inner .lnb .depth1 .gnb .depth2 a:hover{
   color: var(--txt1-color);
   font-weight: 500;
 }
@@ -284,104 +287,107 @@ nav .inner .lnb .depth1 .gnb .depth2 a:hover{
 /*max-width: 768px*/
 @media only screen and (max-width: 768px) {
   .header-include{
-    height: 80px;
+    height: 81px;
   }
-  header{
-    height: 80px;
+  .top-header{
+    height: inherit;
+    padding: 0 32px;
   }
-  header .inner{
+  .top-header .inner{
     max-width: 704px;
-    width: calc(100vw - 64px);
     grid-template-columns: 120px 24px;
-    margin: 0 32px;
   }
-  header .inner h1{
+  .top-header .inner h1{
     width: 120px;
   }
-  header .inner form{
+  .top-header .inner form{
     display: none;
   }
-  header .inner .goto-menus{
+  .top-header .inner .goto-menus{
     grid-template-columns: 24px;
     display: grid;
     justify-content: right;
     gap: 12px;
   }
-  header .inner .goto-menus .goto-icon{
+  .top-header .inner .goto-menus .goto-icon{
     display: none;
   }
-  header .inner .goto-menus .mobile-icon{
+  .top-header .inner .goto-menus .mobile-icon{
     display: block;
   }
-  nav{
+  #nav{
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     top: 0;
     right: -100vw;
     visibility: hidden;
     transition: right 0.3s ease-in-out;
     z-index: 101;
+    padding: 0 32px;
   }
-  nav.slide-in{
+  #nav.slide-in{
     right: 0;
     visibility: visible;
   }
-  nav .inner{
-    width: calc(100vw - 64px);
+  #nav .inner{
+    width: 100%;
     max-width: 704px;
-    margin: 24px 32px;
+    margin: 24px auto;
   }
-  nav .inner .mobile-header{
+  #nav .inner .mobile-header{
     display: grid;
   }
-  nav .inner .mobile-goto{
+  #nav .inner .mobile-goto{
     display: grid;
   }
-  nav .inner .lnb{
+  #nav .inner .lnb{
     display: block;
     padding: 16px 0;
   }
-  nav .inner .lnb .depth1{
+  #nav .inner .lnb .depth1{
     position: static;
     padding-right: 0;
   }
-  nav .inner .lnb .depth1 .depth1-txt{
+  #nav .inner .lnb .depth1 .depth1-txt{
     justify-content: space-between;
     display: grid;
     align-items: center;
   }
-  nav .inner .lnb .depth1:hover .depth1-txt a::before{
+  #nav .inner .lnb .depth1:hover .depth1-txt a::before{
     display: none;
   }
-  nav .inner .lnb .depth1 .depth1-txt .arrow-btn{
+  #nav .inner .lnb .depth1 .depth1-txt .arrow-btn{
     display: block;
   }
-  nav .inner .lnb .depth1 .gnb{
+  #nav .inner .lnb .depth1 .gnb{
     position: static;
     padding: 0;
   }
-  nav .inner .lnb .depth1:hover .gnb{
+  #nav .inner .lnb .depth1:hover .gnb{
     display: none;
   }
-  nav .inner .lnb .depth1:hover .gnb::before{
+  #nav .inner .lnb .depth1:hover .gnb::before{
     display: none;
   }
-  nav .inner .lnb .depth1 .gnb .depth2{
+  #nav .inner .lnb .depth1 .gnb .depth2{
     display: block;
     margin-right: 0;
   }
-  nav .inner .lnb .depth1 .gnb .depth2 a{
+  #nav .inner .lnb .depth1 .gnb .depth2 a{
     padding: 4px 16px;
   }
 }
 @media only screen and (max-width: 360px) {
-  nav .inner .mobile-goto{
+  .top-header{
+    padding: 0 20px;
+  }
+  #nav .inner .mobile-goto{
     gap: 16px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, minmax(78px, auto));
   }
-  nav .inner .mobile-goto .goto-icon:nth-child(3){
+  #nav .inner .mobile-goto .goto-icon:nth-child(3){
     grid-area: 2/1/3/3;
   }
 }
